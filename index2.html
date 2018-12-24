@@ -1,0 +1,409 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  <title> Đồng hồ đếm ngược </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+	<meta property="og:url" content="http://demnguoc.ml"/>
+		<meta property="og:site_name" content="Nihta"/>
+		<meta property="og:title" content="Đếm ngược"/>
+		<meta property="og:description" content="Trang đếm ngược"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:author" content="https://www.facebook.com/Nihta.haha"/>
+		<meta property="og:image" content="images/index.png"/>
+		<meta property="og:image:width" content="854"/>
+		<meta property="og:image:height" content="480"/>
+
+
+
+ <link rel="stylesheet" href="style.css" />
+
+
+
+
+
+   
+   <script type="text/javascript" src="jquery-ui-1.8.23.custom.min.js"></script>
+    <script type="text/javascript" src="jquery.1.7.2.min.js"></script>
+    
+ <script type="text/javascript" src="jquery.spritely-0.6.1v2.js"></script>
+   
+<script> 
+
+jQuery(document).ready(function($) {
+	
+	$('#cloud').pan({
+		fps: 30, // Frame trên giây, fps càng nhỏ thì chuyển động sẽ càng giật.
+		speed: 1, // tốc độ di chuyển 
+		dir: 'right' // hướng chuyển động
+	});
+	$('#city').pan({
+		fps: 30, // Frame trên giây, fps càng nhỏ thì chuyển động sẽ càng giật.
+		speed: 2, // tốc độ di chuyển của vậy thể
+		dir: 'left' // hướng chuyển động, left: phải>trái, right: trái>phải
+	});
+	
+	
+ 
+$('#birds-1')
+		.sprite({
+			fps: 12, // Khung hình / giây
+			no_of_frames: 3 // số lượng khung hình trong bức ảnh
+		})
+		.spRandom({ // Bay tự do trong khoãng cách như dưới
+          	top: 0,
+          	left: 0,
+          	right: 300 ,
+          	bottom: 400,
+          	speed: 3000,
+          	pause: 2000
+      	})
+      	.isDraggable({ // Nếu drag hoạt động, phải thêm Jquery Ui vào
+		    start: function() { // Khi click chuột vào đối tượng và kéo
+		        // Các sự kiện sẽ diễn ra
+		        $('#birds-1').fadeTo('fast', 0.7);
+		    },
+		    stop: function() { // Khi bỏ buôn chuột ra
+		        // Các sự kiện sẽ diễn ra
+		        $('#birds-1').fadeTo('fast', 1);
+		        $('#birds-1').find("p").html("Kéo em đi....");
+		    },
+		    drag: function() { // Trong quá trình kéo
+		        // các sự kiện sẽ diễn ra.
+		      	$('#birds-1').find("p").html("Hãy kéo em đi thật xa....");
+		    }
+		});
+	$('#birds-3')
+		.sprite({
+			fps: 12, // Khung hình / giây
+			no_of_frames: 3 // số lượng khung hình trong bức ảnh
+		})
+		.spRandom({ // Bay tự do trong khoãng cách như dưới
+          	top: 0,
+          	left: 0,
+          	right: 300,
+          	bottom: 400,
+          	speed: 1500,
+          	pause: 800
+      	})
+      	.isDraggable({ // Nếu drag hoạt động, phải thêm Jquery Ui vào
+		    start: function() { // Khi click chuột vào đối tượng và kéo
+		        // Các sự kiện sẽ diễn ra
+		       $('#birds-3').fadeTo('fast', 0.7);
+		    },
+		    stop: function() { // Khi bỏ buôn chuột ra
+		        // Các sự kiện sẽ diễn ra
+		       	$('#birds-3').fadeTo('fast', 1);
+		        $('#birds-3').find("p").html("Đưa thư cho izwebz nào !!!");
+		    },
+		    drag: function() { // Trong quá trình kéo
+		        // các sự kiện sẽ diễn ra.
+		      	$('#birds-3').find("p").html("Đưa thư đưa thư nào....");
+		    }
+		});	
+	$('#birds-2')
+		.sprite({
+			fps: 12, 
+			no_of_frames: 3
+		})
+		.spRandom({
+	      	top: 0,
+		    left: 0,
+		    right: 3000,
+		    bottom: 400,
+		    speed: 1300,
+		    pause: 800
+	    });
+});
+
+
+
+
+</script>
+
+
+    
+ </head>
+
+
+
+
+<script type="text/javascript">  
+	window.onload=function(){  
+	
+var imgarray = new Array("images/1.jpg", "images/2.jpg", "images/3.jpg", "images/4.jpg");  
+		var s = Math.floor(Math.random()* imgarray.length);  
+		document.getElementById("background").src = imgarray[s];  
+ }  
+	</script> 
+
+
+
+<body>
+<style> 
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+  	<div class="fullscreen-bg">
+  	<img style="height: 100%; width: 100%; object-fit: center" id="background" src="images/6.jpg">
+  	</div>
+
+  	
+
+    <article id="cloud">
+
+
+<section id="birds-1">
+ </section>
+
+<font color="orange"> 
+
+<h1 aria-label="   Nihta ">
+<span class="char1" aria-hidden="true">Đếm</span>
+<span class="char2" aria-hidden="true">ngược</span><span class="char3" aria-hidden="true">đến</span>
+<span class="char4" aria-hidden="true"> tết </span>
+
+<span class="char5" aria-hidden="true">
+<font color="red"> Nguyên đán </font>
+
+</span>
+<span class="char6" aria-hidden="true">
+<font color="skyblue">  </font>
+</span>
+
+
+
+</h1>
+</font>
+
+<br><br><br>
+        
+<section class="countdown-wrapper">
+  		    
+<ul id="back-countdiown">
+	  <div class='balloons'>  
+
+
+  		    
+	  <div class='balloon'>     
+ <span class="days">00</span>
+<span style="display: block; font-size: 18px; padding: 9px; font-weight: 300; color: #fff; 
+font-family: 'Podkova', cursive;
+">    Ngày
+</span>
+</div>
+  			
+   
+   	
+  		  <div class='balloon'><span class="hours">00</span>
+  		<span style="display: block; font-size: 18px; padding: 9px; font-weight: 300; color: #fff; 
+font-family: 'Podkova', cursive;
+">    Giờ
+</span>
+		
+
+</div>
+   
+  	  <div class='balloon'><span class="minutes">00</span>
+  				
+<span style="display: block; font-size: 18px; padding: 9px; font-weight: 300; color: #fff; 
+font-family: 'Podkova', cursive;
+">    Phút
+</span>
+</div>
+  		
+  		 
+  	  <div class='balloon'> <span class="seconds">00</span>
+  				
+
+<span style="display: block; font-size: 16px; padding: 9px; font-weight: 300; color: #fff; 
+font-family: 'Podkova', cursive;
+">    giây
+</span>
+</div>
+  			              
+  			
+
+
+</div>
+  
+
+</ul>
+  		</section>
+
+
+   
+
+
+
+  	<script src="coundown-timer.js"></script>
+  	<script> 
+
+jQuery(function ($) { 
+      'use strict';
+
+(function () { 
+   $("#back-countdiown").countdown({ 
+
+                // thời gian January February March April May June July August September October November December //
+   date: "5 february 2019 00:00:00",
+
+
+         format: "on" 
+      }); 
+         }()); 
+                }); 
+$(document).on('click', '.m-menu .dropdown-menu', function(e) { 
+   e.stopPropagation() 
+})
+
+</script>
+  
+
+<center>
+
+
+
+ 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<script src="ynghia.js"></script>
+
+
+<span style="display: block; font-size: 18px; padding: 18px; font-weight: 300; color: #fff; 
+font-family: 'Podkova', cursive;
+">    <div id="rotation"> </div>
+</span>
+
+<script type="text/javascript">rotator();</script>
+
+
+
+
+ 
+
+</article>
+
+
+
+<script src="snowstorm.js"></script>
+<script>snowStorm.excludeMobile = false;</script>
+
+
+
+
+    <footer id="city">
+
+ <div id="duong">
+
+</footer>
+
+
+
+
+
+
+    
+<div id="background-tasks">
+
+
+  <div class="bodem nds" >
+
+
+<a href='http://c-stat.eu/in.php?u=75537'><img src='http://c-stat.eu/c.php?u=75537' alt='Nihta'></a>
+            
+       </div>
+
+
+  <div class="nd5 nds" >
+
+            <p class="letter">
+   <a href="stickman/stickman.html"> Trò Stickman
+</a>
+            </p>
+        </div>
+
+<div class="nd4 nds" data-toggle="tooltip" data-placement="left" title="Build Parallel Index">
+      <p class="letter">
+
+<a href="hex/hex.html">Trò Hextris</a>
+</p>
+    </div>
+
+
+    <div class="nd3 nds">
+            <p class="letter">
+
+<a href="2048/2048.html"> Trò 2048 </a>
+             </p>
+    </div>
+
+    <div class="nd1 nds" data-toggle="tooltip" data-placement="left" title="Clear Cache">
+
+      <p class="letter">
+
+
+<a href="gioithieu/gioithieu.html"> Giới thiệu</a>
+
+</p>
+
+
+</div>
+
+
+ <div class="nd6 nds" data-toggle="tooltip" data-placement="left" title="Clear Cache">
+      <p class="letter">
+
+<a href="ynghia.html"> Cuộc sống</a>
+</p>
+</div>
+
+
+
+
+
+
+
+
+
+  <div id="floating-button" data-toggle="tooltip" data-placement="left" title="Menu">
+<img       src="images/di.gif" width="63" height="100">
+
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

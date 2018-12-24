@@ -2,13 +2,71 @@
 <html lang="vi">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Trang web của nihta</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="jquery-ui-1.8.23.custom.min.js"></script>
+    <script type="text/javascript" src="jquery.1.7.2.min.js"></script>
+    <script type="text/javascript" src="jquery.spritely-0.6.1v2.js"></script>
 </head>
 <body>
-	<h1> Xin chào thế giới </h1>
-	<h2> Hello word</h2>
+	
+	
+	<h1>
+	<span class="char1" aria-hidden="true">Đếm</span>
+	<span class="char2" aria-hidden="true">ngược</span>
+	<span class="char3" aria-hidden="true">đến</span>
+	<span class="char4" aria-hidden="true"> tết </span>
+	<span class="char5" aria-hidden="true">Nguyên đán </span>
+	<span class="char6" aria-hidden="true">  </span>
+	</h1>
+
+
+  	<ul id="back-countdiown">
+	  <div class='balloons'>  
+			<div class='balloon'>     
+ 				<span class="days">00</span>
+				<span class="time1">Ngày</span>
+			</div>
+			<div class='balloon'>     
+ 				<span class="hours">00</span>
+				<span class="time1">Giờ</span>
+			</div>
+			<div class='balloon'>     
+ 				<span class="minutes">00</span>
+				<span class="time1">Phút</span>
+			</div>
+			<div class='balloon'>     
+ 				<span class="seconds">00</span>
+				<span class="time1">Giây</span>
+			</div>
+		</div>
+	</ul>  		
+
+
+
+
+	<script src="coundown-timer.js"></script>
+	<script> 
+		jQuery(function ($) { 
+		      'use strict';
+		(function () { 
+		   $("#back-countdiown").countdown({ 
+		    // Thời gian January February March April May June July August September October November December
+		   date: "5 february 2019 00:00:00",
+		         format: "on" 
+		      }); 
+		         }()); 
+		                }); 
+		$(document).on('click', '.m-menu .dropdown-menu', function(e) { 
+		   e.stopPropagation() 
+		})
+	</script>
+	
 	<script src="snowstorm.js"></script>
 	<script>snowStorm.excludeMobile = false;</script>
+
+
+
 </body>
 </html>
