@@ -136,7 +136,7 @@ h1 span:nth-child(16) {
 
 @media only screen and (max-width: 480px) {
 	.balloons{
-		left: 25%;
+		left: 20%;
 		 top: 12%;
 		-webkit-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
