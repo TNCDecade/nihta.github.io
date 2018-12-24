@@ -5,12 +5,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Trang web của nihta</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="jquery-ui-1.8.23.custom.min.js"></script>
-    <script type="text/javascript" src="jquery.1.7.2.min.js"></script>
-    <script type="text/javascript" src="jquery.spritely-0.6.1v2.js"></script>
+	<link rel="shortcut icon" href="favicon.ico" type="image/png">
+	
 </head>
 <body>
 	
+	
+	
+	<div class="fullscreen-bg">
+  		<img style="height: 100%; width: 100%; object-fit: center" id="background" src="images/6.jpg">
+  	</div>
+	<script type="text/javascript">  
+		window.onload=function(){  
+			var imgarray = new Array("images/1.jpg", "images/2.jpg", "images/3.jpg", "images/4.jpg");  
+			var s = Math.floor(Math.random()* imgarray.length);  
+			document.getElementById("background").src = imgarray[s];  
+ 		}  
+	</script> 
 	
 	<h1>
 	<span class="char1" aria-hidden="true">Đếm</span>
@@ -45,7 +56,9 @@
 
 
 
-
+	<script type="text/javascript" src="jquery-ui-1.8.23.custom.min.js"></script>
+    <script type="text/javascript" src="jquery.1.7.2.min.js"></script>
+    <script type="text/javascript" src="jquery.spritely-0.6.1v2.js"></script>
 	<script src="coundown-timer.js"></script>
 	<script> 
 		jQuery(function ($) { 
