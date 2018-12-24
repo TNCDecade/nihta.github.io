@@ -133,6 +133,17 @@ h1 span:nth-child(16) {
 	 -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+
+@media only screen and (max-width: 480px) {
+	.balloons{
+		left: 25%;
+		 top: 12%;
+		-webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+
+	}
+}
+
 .time1 {
 	display: block;
 	font-size: 18px;
@@ -175,7 +186,7 @@ h1 span:nth-child(16) {
   display: inline-block;
   top: 60px;
   position: absolute;
-  height: 37px;
+  height: 37px;  /* Độ dài dây bóng*/
   width: 2px;
   margin: 0 auto;
   left: 26px;
