@@ -140,9 +140,8 @@ h1 span:nth-child(16) {
 		 top: 12%;
 		-webkit-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
-
-	}
-}
+    }
+} 
 
 .time1 {
 	display: block;
@@ -230,4 +229,27 @@ h1 span:nth-child(16) {
 
 .balloon:nth-child(5):before {
   color: hsl(23, 44%, 46%);
+}
+
+
+div.bo {
+	/*       top   right  bottom left*/
+	padding: 10px  10px   10px   10px; /*Khoang cach tu noi dung den bo*/
+	/*Khoang cach tu bo den trang*/
+	margin-top: 30%;
+	
+ 	border: 2px solid green;
+ 	border-radius: 5px;
+ 	z-index: 5;
+ 
+}
+@media only screen and (max-width: 600px) {
+	div.bo {
+		margin-top: 60%;
+	}
+}
+@media screen and (min-width: 600px) and (max-width: 800px) {
+	div.bo {
+		margin-top: 45%;
+	}
 }
