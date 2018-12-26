@@ -231,10 +231,6 @@ h1 span:nth-child(16) {
   color: hsl(23, 44%, 46%);
 }
 
-body {
-	width: 100%;
-	height: 100%;
-}
 div.bo {
 	/*       top   right  bottom left*/
 	padding: 10px  10px   10px   10px; /*Khoang cach tu noi dung den bo*/
@@ -244,6 +240,7 @@ div.bo {
 	margin-right: 10%;
  	border: 2px solid green;
  	border-radius: 5px;
+ 	text-align: center;
  	z-index: 5;
  
 }
