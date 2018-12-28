@@ -1,6 +1,7 @@
 body {
 	background: skyblue;
 	color: #fff;
+	margin: 0 0 0 0;
 }
 /* img fullscreen */
 .fullscreen-bg
@@ -129,14 +130,14 @@ h1 span:nth-child(16) {
 	 z-index:10;
 	 position: absolute;
 	 left: 50%;
-	 top: 22%;
+	 top: 25%;
 	 -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
 @media only screen and (max-width: 480px) {
 	.balloons{
-		left: 20%;
+		left: 21%;
 		 top: 12%;
 		-webkit-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
@@ -231,26 +232,51 @@ h1 span:nth-child(16) {
   color: hsl(23, 44%, 46%);
 }
 
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  z-index: 99;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
 div.bo {
-	/*       top   right  bottom left*/
-	padding: 10px  10px   10px   10px; /*Khoang cach tu noi dung den bo*/
-	/*Khoang cach tu bo den trang*/
-	margin-top: 30%;
+	position: fixed;
 	margin-left: 8%;
-	margin-right: 10%;
- 	border: 2px solid green;
- 	border-radius: 5px;
- 	text-align: center;
- 	z-index: 5;
- 
-}
-@media only screen and (max-width: 600px) {
-	div.bo {
-		margin-top: 300px;
-	}
-}
-@media screen and (min-width: 600px) and (max-width: 800px) {
-	div.bo {
-		margin-top: 45%;
-	}
+	margin-right: 8%;
+	top: 55%;
+	background: red;
+	text-align: center;
+	border: 2px solid green;
+	border-radius: 15px;
 }
