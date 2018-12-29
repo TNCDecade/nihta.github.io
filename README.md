@@ -1,2 +1,2 @@
 # nihta.github.io
-Trang web
+Link web: https://nihta.github.io/
