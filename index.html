@@ -114,15 +114,6 @@
 
 	<script type="text/javascript">
 		(function() {
-			var frameLoop;
-			// Loop Animation
-			frameLoop = setInterval(function() {
-				return $('.menu').toggleClass('active');
-			}, 3000);
-			// Disables Loop onHoVer
-			$('body').click(function() {
-				return clearInterval(frameLoop);
-			});
 			$('.fab1').on('click', function(e) {
 				e.preventDefault();
 				return $('.menu').toggleClass('active');
