@@ -2,27 +2,19 @@
 <html lang="vi">
 <head>
 	<meta charset="UTF-8">
-	 <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
-	<title> Trang web của nihta</title>
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+
+	<title> Trang web của Nihta</title>
+
+	<meta name="description" content="Trang web thử nghiệm của Nihta">
+	<meta name="author" content="Nihta">
+	
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="shortcut icon" href="favicon.ico" type="image/png">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 	
 </head>
 <body>
-	
-	
-	
-	<div class="fullscreen-bg">
-  		<img style="height:100%;width:100%;object-fit:center" id="background" >
-  	</div>
-	<script type="text/javascript">  
-		window.onload=function(){  
-			var imgarray = new Array("images/1.jpg", "images/2.jpg", "images/3.jpg", "images/4.jpg", "images/5.jpg", "images/5.jpg", "images/7.jpg", "images/8.jpg", "images/9.jpg", "images/10.jpg", "images/11.jpg");  
-			var s = Math.floor(Math.random()* imgarray.length);  
-			document.getElementById("background").src = imgarray[s];  
- 		}  
-	</script> 
 
 	<h1>
 	<span class="char1" aria-hidden="true">Đếm</span>
@@ -32,7 +24,6 @@
 	<span class="char5" aria-hidden="true">Nguyên đán </span>
 	<span class="char6" aria-hidden="true">  </span>
 	</h1>
-
 
   	<span id="dem-nguoc">
 	  <div class='balloons'>  
@@ -55,44 +46,32 @@
 		</div>
 	</span>
 
+	<div class="bo" id="rotation">
+		Đang tải ... <br>
+		Chờ đợi là hạnh phúc
+	</div>
+
+	<div class="fullscreen-bg">
+  		<img style="height:100%;width:100%;object-fit:center" id="background" >
+  	</div>
+	<script type="text/javascript">  
+		window.onload=function(){  
+			var imgarray = new Array("images/1.jpg", "images/2.jpg", "images/3.jpg", "images/4.jpg", "images/5.jpg", "images/5.jpg", "images/7.jpg", "images/8.jpg", "images/9.jpg", "images/10.jpg", "images/11.jpg");  
+			var s = Math.floor(Math.random()* imgarray.length);  
+			document.getElementById("background").src = imgarray[s];  
+ 		}  
+	</script> 	
 
 
 
-
-
-	<div class="bo" id="rotation"> Đang tải ... </div>		
-
-
-
-	<script type="text/javascript" src="jquery-ui-1.8.23.custom.min.js"></script>
-    <script type="text/javascript" src="jquery.1.7.2.min.js"></script>
-    <script type="text/javascript" src="jquery.spritely-0.6.1v2.js"></script>
-	<script src="coundown-timer.js"></script>
-	<script> 
-		jQuery(function ($) { 
-		      'use strict';
-		(function () { 
-		   $("#dem-nguoc").countdown({ 
-		    // Thời gian January February March April May June July August September October November December
-		   date: "5 february 2019 00:00:00",
-		         format: "on" 
-		      }); 
-		         }()); 
-		                }); 
-		$(document).on('click', '.m-menu .dropdown-menu', function(e) { 
-		   e.stopPropagation() 
-		})
-	</script>
 	
-	<script src="snowstorm.js"></script>
-	<script>snowStorm.excludeMobile = false;</script>
+	
 	<span class="tooltip" style="bottom: 10px;left: 32px;">
 		<a href="https://github.com/Nihta/nihta.github.io.git"> 😎 Nihta </a>
 		<span class="tooltiptext tooltip-top">Xem nguồn trang web này</span>
 
 	</span>
-	<script src="ynghia.js"></script>
-	<script type="text/javascript">rotator();</script>
+	
 
 
 	<span class="menu">
@@ -112,7 +91,7 @@
 		    </li>
 
 		    <li>
-				<a href="#" data-tooltip="Github">
+				<a href="https://github.com/Nihta" data-tooltip="Github">
 					<i class="fab fa-github"></i>
 				</a>
 		    </li>
@@ -125,7 +104,34 @@
 		</ul>
     </span>
 
+
+	<script src="ynghia.js"></script>
+	<script type="text/javascript">rotator();</script>
+
+	<script type="text/javascript" src="jquery.1.7.2.min.js"></script>
+	<script type="text/javascript" src="jquery-ui-1.8.23.custom.min.js"></script>
+    <script type="text/javascript" src="jquery.spritely-0.6.1v2.js"></script>
+
+	<script src="coundown-timer.js"></script>
+	<script>
+		// Coundown timer
+		jQuery(function ($) { 
+		      'use strict';
+		(function () { 
+		   $("#dem-nguoc").countdown({ 
+		    // Thời gian January February March April May June July August September October November December
+		   date: "5 february 2019 00:00:00",
+		         format: "on" 
+		      }); 
+		         }()); 
+		                }); 
+		$(document).on('click', '.m-menu .dropdown-menu', function(e) { 
+		   e.stopPropagation() 
+		})
+	</script>
+
 	<script type="text/javascript">
+		// Menu
 		(function() {
 			$('.fab1').on('click', function(e) {
 				e.preventDefault();
@@ -133,5 +139,12 @@
 			});
 		}).call(this);
 	</script>
+
+
+	<script src="snowstorm.js"></script>
+	<script>snowStorm.excludeMobile = false;</script>
+
+	<footer>		
+	</footer>	
 </body>
 </html>
