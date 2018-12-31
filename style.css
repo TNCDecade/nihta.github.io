@@ -2,8 +2,11 @@ body {
 	background: skyblue;
 	color: #fff;
 	margin: 0 0 0 0;
+  font-family: sans-serif;
 }
-
+h1 {
+  font-family: serif;
+}
 a{
   text-decoration: none;
   color:orange;
@@ -570,18 +573,18 @@ div.bo {
 
 [data-tooltip]:before {
   top: 50%;
-  margin-top: -11px;
+  margin-top: -15px;
   font-weight: 600;
   border-radius: 2px;
   background: #555;
   color: #fff;
   content: attr(data-tooltip);
-  font-size: 18px;
+  font-size: 16px;
   text-decoration: none;
   visibility: hidden;
   opacity: 0;
   padding: 4px 7px;
-  margin-right: 12px;
+  margin-right: 14px;
   position: absolute;
   transform: scale(0);
   right: 100%;
@@ -654,7 +657,9 @@ li {
   -o-transition: .3s;
   transition: .3s;
   font-size: 33px;
-  padding: 5px 10px 5px 0px;
+  padding-right: 7px;
+  padding-top: 7px;
+  
 }
 
 .fa-facebook, .fa-facebook-messenger {
