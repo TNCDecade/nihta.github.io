@@ -645,8 +645,8 @@ li {
 .menu ul li a {
   border: 2px solid green;
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   text-decoration: none;
   background-color: #ffffff;
   border-radius: 50%;
@@ -657,15 +657,22 @@ li {
   -o-transition: .3s;
   transition: .3s;
   font-size: 33px;
-  padding-right: 7px;
-  padding-top: 7px;
+  
   
 }
 
-.fa-facebook, .fa-facebook-messenger {
-  color: blue;
+.fa-facebook-messenger {
+  color: #0C45FF;
+  padding-right: 10px;
+  padding-top: 10px;
 }
-
+.fa-facebook-f {
+  color: #0c45ff;
+  padding-right: 10px;
+  padding-top: 10px;
+}
 .fa-github {
+  padding-right: 9px;
+  padding-top: 9px;
   color: black;
 }

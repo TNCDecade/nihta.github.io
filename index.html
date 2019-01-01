@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
@@ -8,39 +9,40 @@
 
 	<meta name="description" content="Trang web thử nghiệm của Nihta">
 	<meta name="author" content="Nihta">
-	
+
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="shortcut icon" href="favicon.ico" type="image/png">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-	
+
 </head>
+
 <body>
 
 	<h1>
-	<span class="char1" aria-hidden="true">Đếm</span>
-	<span class="char2" aria-hidden="true">ngược</span>
-	<span class="char3" aria-hidden="true">đến</span>
-	<span class="char4" aria-hidden="true"> tết </span>
-	<span class="char5" aria-hidden="true">Nguyên đán </span>
-	<span class="char6" aria-hidden="true">  </span>
+		<span class="char1" aria-hidden="true">Đếm</span>
+		<span class="char2" aria-hidden="true">ngược</span>
+		<span class="char3" aria-hidden="true">đến</span>
+		<span class="char4" aria-hidden="true"> tết </span>
+		<span class="char5" aria-hidden="true">Nguyên đán </span>
+		<span class="char6" aria-hidden="true"> </span>
 	</h1>
 
-  	<span id="dem-nguoc">
-	  <div class='balloons'>  
-			<div class='balloon'>     
- 				<span class="days">00</span>
+	<span id="dem-nguoc">
+		<div class='balloons'>
+			<div class='balloon'>
+				<span class="days">00</span>
 				<span class="time1">Ngày</span>
 			</div>
-			<div class='balloon'>     
- 				<span class="hours">00</span>
+			<div class='balloon'>
+				<span class="hours">00</span>
 				<span class="time1">Giờ</span>
 			</div>
-			<div class='balloon'>     
- 				<span class="minutes">00</span>
+			<div class='balloon'>
+				<span class="minutes">00</span>
 				<span class="time1">Phút</span>
 			</div>
-			<div class='balloon'>     
- 				<span class="seconds">00</span>
+			<div class='balloon'>
+				<span class="seconds">00</span>
 				<span class="time1">Giây</span>
 			</div>
 		</div>
@@ -52,81 +54,82 @@
 	</div>
 
 	<div class="fullscreen-bg">
-  		<img style="height:100%;width:100%;object-fit:center" id="background" >
-  	</div>
-	<script type="text/javascript">  
-		window.onload=function(){  
-			var imgarray = new Array("images/1.jpg", "images/2.jpg", "images/3.jpg", "images/4.jpg", "images/5.jpg", "images/5.jpg", "images/7.jpg", "images/8.jpg", "images/9.jpg", "images/10.jpg", "images/11.jpg");  
-			var s = Math.floor(Math.random()* imgarray.length);  
-			document.getElementById("background").src = imgarray[s];  
- 		}  
-	</script> 	
+		<img style="height:100%;width:100%;object-fit:center" id="background">
+	</div>
+	<script type="text/javascript">
+		window.onload = function() {
+			var imgarray = new Array("images/1.jpg", "images/2.jpg", "images/3.jpg", "images/4.jpg", "images/5.jpg", "images/5.jpg", "images/7.jpg", "images/8.jpg", "images/9.jpg", "images/10.jpg", "images/11.jpg");
+			var s = Math.floor(Math.random() * imgarray.length);
+			document.getElementById("background").src = imgarray[s];
+		}
+	</script>
 
 
 
-	
-	
+
+
 	<span class="tooltip" style="bottom: 10px;left: 32px;">
 		<a href="https://github.com/Nihta/nihta.github.io.git"> 😎 Nihta </a>
 		<span class="tooltiptext tooltip-top">Xem nguồn trang web này</span>
-
 	</span>
-	
+
 
 
 	<span class="menu">
-    	<span class="overlay"></span>
-    	<span class="fab1"></span>
+		<span class="overlay"></span>
+		<span class="fab1"></span>
 		<ul>
-		    <li>
-		      <a href="https://www.facebook.com/Nihta.haha" data-tooltip="Facebook">
-		      	<i class="fab fa-facebook"></i>
-		      </a>
-		    </li>
+			<li>
+				<a href="https://www.facebook.com/Nihta.haha" data-tooltip="Facebook">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+			</li>
 
-		    <li>
-		      <a href="https://m.me/Nihta.haha" data-tooltip="Messenger">
-		        <i class="fab fa-facebook-messenger"></i>
-		      </a>
-		    </li>
+			<li>
+				<a href="https://m.me/Nihta.haha" data-tooltip="Messenger">
+					<i class="fab fa-facebook-messenger"></i>
+				</a>
+			</li>
 
-		    <li>
+			<li>
 				<a href="https://github.com/Nihta" data-tooltip="Github">
 					<i class="fab fa-github"></i>
 				</a>
-		    </li>
+			</li>
 
-		    <li>
-		      <a href="#" data-tooltip=" No no">
-		        <i class="icon-material icon-material_gp"></i>
-		      </a>
-		    </li>
+			<li>
+				<a href="#" data-tooltip=" No no">
+					<i class="icon-material icon-material_gp"></i>
+				</a>
+			</li>
 		</ul>
-    </span>
+	</span>
 
 
 	<script src="ynghia.js"></script>
-	<script type="text/javascript">rotator();</script>
+	<script type="text/javascript">
+		rotator();
+	</script>
 
 	<script type="text/javascript" src="jquery.1.7.2.min.js"></script>
 	<script type="text/javascript" src="jquery-ui-1.8.23.custom.min.js"></script>
-    <script type="text/javascript" src="jquery.spritely-0.6.1v2.js"></script>
+	<script type="text/javascript" src="jquery.spritely-0.6.1v2.js"></script>
 
 	<script src="coundown-timer.js"></script>
 	<script>
 		// Coundown timer
-		jQuery(function ($) { 
-		      'use strict';
-		(function () { 
-		   $("#dem-nguoc").countdown({ 
-		    // Thời gian January February March April May June July August September October November December
-		   date: "5 february 2019 00:00:00",
-		         format: "on" 
-		      }); 
-		         }()); 
-		                }); 
-		$(document).on('click', '.m-menu .dropdown-menu', function(e) { 
-		   e.stopPropagation() 
+		jQuery(function($) {
+			'use strict';
+			(function() {
+				$("#dem-nguoc").countdown({
+					// Thời gian January February March April May June July August September October November December
+					date: "5 february 2019 00:00:00",
+					format: "on"
+				});
+			}());
+		});
+		$(document).on('click', '.m-menu .dropdown-menu', function(e) {
+			e.stopPropagation()
 		})
 	</script>
 
@@ -142,9 +145,12 @@
 
 
 	<script src="snowstorm.js"></script>
-	<script>snowStorm.excludeMobile = false;</script>
+	<script>
+		snowStorm.excludeMobile = false;
+	</script>
 
-	<footer>		
-	</footer>	
+	<footer>
+	</footer>
 </body>
+
 </html>
