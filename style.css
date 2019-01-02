@@ -11,6 +11,9 @@ a{
   text-decoration: none;
   color:orange;
 }
+
+
+
 /* img fullscreen */
 .fullscreen-bg
 	{ position: fixed; top: 0; right: 0; bottom: 0; left: 0; overflow: hidden; z-index: -100; } 
@@ -28,7 +31,7 @@ a{
 /* Title */
 h1 {
   position: absolute;
-  top: 7%;
+  top: 40px;
   left: 50%;
   z-index: 11;
   font-weight:900;
@@ -38,7 +41,7 @@ h1 {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-@media (min-width: 37.5em) {
+@media (min-width: 600px) {
   h1 {
     font-size: 28px;
   }
@@ -133,26 +136,44 @@ h1 span:nth-child(16) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Balloon */
 .balloons {
-	 z-index:10;
-	 position: absolute;
-	 left: 50%;
-	 top: 25%;
-	 -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  margin-top: 65px;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 10;
 }
 
-@media only screen and (max-width: 480px) {
-	.balloons{
-		left: 20%;
-		 top: 12%;
-		-webkit-transform: translate(0%, 0%);
-          transform: translate(0%, 0%);
-    }
-} 
-
-.time1 {
+.text-time {
 	display: block;
 	font-size: 18px;
 	padding: 9px;
@@ -610,7 +631,7 @@ div.bo {
 }
 
 
-ul {
+.menu ul {
   position: absolute;
   left: 0;
   right: 0;
@@ -624,7 +645,7 @@ ul {
 }
 
 
-li {
+.menu ul li {
   display: block;
   text-align: right;
   padding-right: 22px;
@@ -676,3 +697,15 @@ li {
   padding-top: 9px;
   color: black;
 }
+
+
+
+
+
+
+
+
+
+
+
+

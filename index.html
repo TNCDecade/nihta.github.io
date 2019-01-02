@@ -18,40 +18,47 @@
 
 <body>
 
-	<h1>
-		<span class="char1" aria-hidden="true">Đếm</span>
-		<span class="char2" aria-hidden="true">ngược</span>
-		<span class="char3" aria-hidden="true">đến</span>
-		<span class="char4" aria-hidden="true"> tết </span>
-		<span class="char5" aria-hidden="true">Nguyên đán </span>
-		<span class="char6" aria-hidden="true"> </span>
-	</h1>
+	<header>
+		<h1>
+			<span class="char1" aria-hidden="true">Đếm</span>
+			<span class="char2" aria-hidden="true">ngược</span>
+			<span class="char3" aria-hidden="true">đến</span>
+			<span class="char4" aria-hidden="true"> tết </span>
+			<span class="char5" aria-hidden="true">Nguyên đán </span>
+			<span class="char6" aria-hidden="true"> </span>
+		</h1>
+	</header>
+	
+	<section class="wraper">
+		<section class="countdown-wrapper">
+  			<ul id="back-countdiown" class="balloons">
+  				<li class="balloon">                    
+  					<span class="days">00</span>
+  					<span class="text-time">Ngày</span>
+  				</li>
+  				<li class="balloon">
+  					<span class="hours">00</span>
+  					<span class="text-time">Giờ</span>
+  				</li>
+  				<li class="balloon">
+  					<span class="minutes">00</span>
+					  <span class="text-time">Phút</span>
+  				</li>
+  				<li class="balloon">
+  					<span class="seconds">00</span>
+  					<span class="text-time">Giây</span>
+  				</li> 				            
+ 			</ul>
+			<div class="bo" id="rotation">
+				Đang tải ... <br>
+				Chờ đợi là hạnh phúc
+			</div>
+  		</section>
+	</section>
 
-	<span id="dem-nguoc">
-		<div class='balloons'>
-			<div class='balloon'>
-				<span class="days">00</span>
-				<span class="time1">Ngày</span>
-			</div>
-			<div class='balloon'>
-				<span class="hours">00</span>
-				<span class="time1">Giờ</span>
-			</div>
-			<div class='balloon'>
-				<span class="minutes">00</span>
-				<span class="time1">Phút</span>
-			</div>
-			<div class='balloon'>
-				<span class="seconds">00</span>
-				<span class="time1">Giây</span>
-			</div>
-		</div>
-	</span>
 
-	<div class="bo" id="rotation">
-		Đang tải ... <br>
-		Chờ đợi là hạnh phúc
-	</div>
+
+	
 
 	<div class="fullscreen-bg">
 		<img style="height:100%;width:100%;object-fit:center" id="background">
@@ -68,10 +75,7 @@
 
 
 
-	<span class="tooltip" style="bottom: 10px;left: 32px;">
-		<a href="https://github.com/Nihta/nihta.github.io.git"> 😎 Nihta </a>
-		<span class="tooltiptext tooltip-top">Xem nguồn trang web này</span>
-	</span>
+	
 
 
 
@@ -106,22 +110,21 @@
 	</span>
 
 
-	<script src="ynghia.js"></script>
+	<script src="js/ynghia.js"></script>
 	<script type="text/javascript">
 		rotator();
 	</script>
 
-	<script type="text/javascript" src="jquery.1.7.2.min.js"></script>
-	<script type="text/javascript" src="jquery-ui-1.8.23.custom.min.js"></script>
-	<script type="text/javascript" src="jquery.spritely-0.6.1v2.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	
 
-	<script src="coundown-timer.js"></script>
+	<script src="js/coundown-timer.js"></script>
 	<script>
 		// Coundown timer
 		jQuery(function($) {
 			'use strict';
 			(function() {
-				$("#dem-nguoc").countdown({
+				$("#back-countdiown").countdown({
 					// Thời gian January February March April May June July August September October November December
 					date: "5 february 2019 00:00:00",
 					format: "on"
@@ -144,13 +147,16 @@
 	</script>
 
 
-	<script src="snowstorm.js"></script>
+	<script src="js/snowstorm.js"></script>
 	<script>
 		snowStorm.excludeMobile = false;
 	</script>
 
 	<footer>
+		<span class="tooltip" style="bottom: 10px;left: 32px;">
+			<a href="https://github.com/Nihta/nihta.github.io.git"> 😎 Nihta </a>
+			<span class="tooltiptext tooltip-top">Xem nguồn trang web này</span>
+		</span>
 	</footer>
 </body>
-
 </html>
