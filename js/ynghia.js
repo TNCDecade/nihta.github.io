@@ -137,5 +137,5 @@ index = Math.floor(index);
 if (index == quotes.length) {index = 0;}
 document.getElementById("rotation").innerHTML = quotes[index];
 
-setTimeout("rotator();",5000);
+setTimeout("rotator();",10000000);
 }
